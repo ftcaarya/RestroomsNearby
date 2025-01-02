@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		095BB27E2C25D465004F200D /* Restrooms_NearbyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095BB27D2C25D465004F200D /* Restrooms_NearbyApp.swift */; };
+		095BB2802C25D465004F200D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095BB27F2C25D465004F200D /* ContentView.swift */; };
+		095BB2822C25D466004F200D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 095BB2812C25D466004F200D /* Assets.xcassets */; };
+		095BB2852C25D466004F200D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 095BB2842C25D466004F200D /* Preview Assets.xcassets */; };
+		095BB28D2C25D51B004F200D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095BB28C2C25D51B004F200D /* LocationManager.swift */; };
+		095BB2912C25DAEB004F200D /* Restroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095BB2902C25DAEB004F200D /* Restroom.swift */; };
+		095BB2942C25ED36004F200D /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095BB2932C25ED36004F200D /* HTTPClient.swift */; };
+		095BB2962C25EDD5004F200D /* RestroomClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095BB2952C25EDD5004F200D /* RestroomClient.swift */; };
+		095BB2992C25F10E004F200D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095BB2982C25F10E004F200D /* Constants.swift */; };
+		095BB29C2C25F1E3004F200D /* MKCoordinateRegion+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095BB29B2C25F1E3004F200D /* MKCoordinateRegion+Extensions.swift */; };
+		095BB29E2C25F279004F200D /* Extension+MapCameraPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095BB29D2C25F279004F200D /* Extension+MapCameraPosition.swift */; };
+		095BB2A12C25F3B7004F200D /* HTTPClientKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095BB2A02C25F3B7004F200D /* HTTPClientKey.swift */; };
+		095BB2A42C25F84A004F200D /* RestroomDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095BB2A32C25F84A004F200D /* RestroomDetailView.swift */; };
+		095BB2A62C25FD97004F200D /* ActionButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095BB2A52C25FD97004F200D /* ActionButtons.swift */; };
+		095BB2AA2C2600C5004F200D /* restrooms.json in Resources */ = {isa = PBXBuildFile; fileRef = 095BB2A72C2600C5004F200D /* restrooms.json */; };
+		095BB2AB2C2600C5004F200D /* MockRestroomClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095BB2A82C2600C5004F200D /* MockRestroomClient.swift */; };
+		095BB2AC2C2600C5004F200D /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095BB2A92C2600C5004F200D /* PreviewData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		095BB27A2C25D465004F200D /* Restrooms Nearby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Restrooms Nearby.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		095BB27D2C25D465004F200D /* Restrooms_NearbyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restrooms_NearbyApp.swift; sourceTree = "<group>"; };
+		095BB27F2C25D465004F200D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		095BB2812C25D466004F200D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		095BB2842C25D466004F200D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		095BB28C2C25D51B004F200D /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		095BB2902C25DAEB004F200D /* Restroom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restroom.swift; sourceTree = "<group>"; };
+		095BB2932C25ED36004F200D /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		095BB2952C25EDD5004F200D /* RestroomClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestroomClient.swift; sourceTree = "<group>"; };
+		095BB2982C25F10E004F200D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		095BB29B2C25F1E3004F200D /* MKCoordinateRegion+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKCoordinateRegion+Extensions.swift"; sourceTree = "<group>"; };
+		095BB29D2C25F279004F200D /* Extension+MapCameraPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+MapCameraPosition.swift"; sourceTree = "<group>"; };
+		095BB2A02C25F3B7004F200D /* HTTPClientKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientKey.swift; sourceTree = "<group>"; };
+		095BB2A32C25F84A004F200D /* RestroomDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestroomDetailView.swift; sourceTree = "<group>"; };
+		095BB2A52C25FD97004F200D /* ActionButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtons.swift; sourceTree = "<group>"; };
+		095BB2A72C2600C5004F200D /* restrooms.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = restrooms.json; path = ../../../../../Downloads/restrooms.json; sourceTree = "<group>"; };
+		095BB2A82C2600C5004F200D /* MockRestroomClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockRestroomClient.swift; path = ../../../../../Downloads/MockRestroomClient.swift; sourceTree = "<group>"; };
+		095BB2A92C2600C5004F200D /* PreviewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PreviewData.swift; path = ../../../../../Downloads/PreviewData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		095BB2772C25D465004F200D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		095BB2712C25D465004F200D = {
+			isa = PBXGroup;
+			children = (
+				095BB27C2C25D465004F200D /* Restrooms Nearby */,
+				095BB27B2C25D465004F200D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		095BB27B2C25D465004F200D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				095BB27A2C25D465004F200D /* Restrooms Nearby.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		095BB27C2C25D465004F200D /* Restrooms Nearby */ = {
+			isa = PBXGroup;
+			children = (
+				095BB2A22C25F836004F200D /* Views */,
+				095BB29F2C25F39F004F200D /* Environment Values */,
+				095BB29A2C25F1BD004F200D /* Extensions */,
+				095BB2972C25F0FB004F200D /* Utilities */,
+				095BB2922C25ED29004F200D /* Clients */,
+				095BB28F2C25DADD004F200D /* Models */,
+				095BB28B2C25D4EC004F200D /* Managers */,
+				095BB27D2C25D465004F200D /* Restrooms_NearbyApp.swift */,
+				095BB27F2C25D465004F200D /* ContentView.swift */,
+				095BB2812C25D466004F200D /* Assets.xcassets */,
+				095BB2832C25D466004F200D /* Preview Content */,
+			);
+			path = "Restrooms Nearby";
+			sourceTree = "<group>";
+		};
+		095BB2832C25D466004F200D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				095BB2A82C2600C5004F200D /* MockRestroomClient.swift */,
+				095BB2A92C2600C5004F200D /* PreviewData.swift */,
+				095BB2A72C2600C5004F200D /* restrooms.json */,
+				095BB2842C25D466004F200D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		095BB28B2C25D4EC004F200D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				095BB28C2C25D51B004F200D /* LocationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		095BB28F2C25DADD004F200D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				095BB2902C25DAEB004F200D /* Restroom.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		095BB2922C25ED29004F200D /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				095BB2932C25ED36004F200D /* HTTPClient.swift */,
+				095BB2952C25EDD5004F200D /* RestroomClient.swift */,
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
+		095BB2972C25F0FB004F200D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				095BB2982C25F10E004F200D /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		095BB29A2C25F1BD004F200D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				095BB29B2C25F1E3004F200D /* MKCoordinateRegion+Extensions.swift */,
+				095BB29D2C25F279004F200D /* Extension+MapCameraPosition.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		095BB29F2C25F39F004F200D /* Environment Values */ = {
+			isa = PBXGroup;
+			children = (
+				095BB2A02C25F3B7004F200D /* HTTPClientKey.swift */,
+			);
+			path = "Environment Values";
+			sourceTree = "<group>";
+		};
+		095BB2A22C25F836004F200D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				095BB2A32C25F84A004F200D /* RestroomDetailView.swift */,
+				095BB2A52C25FD97004F200D /* ActionButtons.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		095BB2792C25D465004F200D /* Restrooms Nearby */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 095BB2882C25D466004F200D /* Build configuration list for PBXNativeTarget "Restrooms Nearby" */;
+			buildPhases = (
+				095BB2762C25D465004F200D /* Sources */,
+				095BB2772C25D465004F200D /* Frameworks */,
+				095BB2782C25D465004F200D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Restrooms Nearby";
+			productName = "Restrooms Nearby";
+			productReference = 095BB27A2C25D465004F200D /* Restrooms Nearby.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		095BB2722C25D465004F200D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					095BB2792C25D465004F200D = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 095BB2752C25D465004F200D /* Build configuration list for PBXProject "Restrooms Nearby" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 095BB2712C25D465004F200D;
+			productRefGroup = 095BB27B2C25D465004F200D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				095BB2792C25D465004F200D /* Restrooms Nearby */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		095BB2782C25D465004F200D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				095BB2852C25D466004F200D /* Preview Assets.xcassets in Resources */,
+				095BB2822C25D466004F200D /* Assets.xcassets in Resources */,
+				095BB2AA2C2600C5004F200D /* restrooms.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		095BB2762C25D465004F200D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				095BB2A12C25F3B7004F200D /* HTTPClientKey.swift in Sources */,
+				095BB2912C25DAEB004F200D /* Restroom.swift in Sources */,
+				095BB2962C25EDD5004F200D /* RestroomClient.swift in Sources */,
+				095BB2A42C25F84A004F200D /* RestroomDetailView.swift in Sources */,
+				095BB2AC2C2600C5004F200D /* PreviewData.swift in Sources */,
+				095BB2942C25ED36004F200D /* HTTPClient.swift in Sources */,
+				095BB2802C25D465004F200D /* ContentView.swift in Sources */,
+				095BB2992C25F10E004F200D /* Constants.swift in Sources */,
+				095BB29C2C25F1E3004F200D /* MKCoordinateRegion+Extensions.swift in Sources */,
+				095BB2AB2C2600C5004F200D /* MockRestroomClient.swift in Sources */,
+				095BB27E2C25D465004F200D /* Restrooms_NearbyApp.swift in Sources */,
+				095BB28D2C25D51B004F200D /* LocationManager.swift in Sources */,
+				095BB29E2C25F279004F200D /* Extension+MapCameraPosition.swift in Sources */,
+				095BB2A62C25FD97004F200D /* ActionButtons.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		095BB2862C25D466004F200D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		095BB2872C25D466004F200D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		095BB2892C25D466004F200D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Restrooms Nearby/Preview Content\"";
+				DEVELOPMENT_TEAM = DR2TXY6VQ4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "iosappdev.Restrooms-Nearby";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		095BB28A2C25D466004F200D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Restrooms Nearby/Preview Content\"";
+				DEVELOPMENT_TEAM = DR2TXY6VQ4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "iosappdev.Restrooms-Nearby";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		095BB2752C25D465004F200D /* Build configuration list for PBXProject "Restrooms Nearby" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				095BB2862C25D466004F200D /* Debug */,
+				095BB2872C25D466004F200D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		095BB2882C25D466004F200D /* Build configuration list for PBXNativeTarget "Restrooms Nearby" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				095BB2892C25D466004F200D /* Debug */,
+				095BB28A2C25D466004F200D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 095BB2722C25D465004F200D /* Project object */;
+}
